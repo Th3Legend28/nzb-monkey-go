@@ -27,6 +27,7 @@ type Args struct {
 	Config      string   `arg:"--config" help:"path to the config file"`
 	Debug       bool     `arg:"--debug" help:"logs output to log file"`
 	Register    bool     `arg:"--register" help:"register the NZBLNK protocol"`
+	GUI         bool     `arg:"--gui" help:"start with graphical user interface"`
 }
 
 // version information
