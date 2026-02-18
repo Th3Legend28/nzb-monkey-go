@@ -34,7 +34,10 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v4
         with:
-          go-version-file: 'go.mod' # Use the Go version specified in go.mod
+          go-version-file: 'go.mod'
+
+      - name: Tidy Go modules
+        run: go mod tidy
       
       - name: Install Fyne dependencies (Linux)
         run: |
