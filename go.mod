@@ -3,6 +3,7 @@ module github.com/Tensai75/nzb-monkey-go
 go 1.25.0
 
 require (
+	fyne.io/fyne/v2 v2.5.4
 	github.com/Tensai75/nntp v0.1.5
 	github.com/Tensai75/nntpPool v0.1.3
 	github.com/Tensai75/nzbparser v0.1.0
