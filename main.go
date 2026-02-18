@@ -86,6 +86,15 @@ func main() {
 	parseArguments()
 	setConfPath()
 	checkForConfig()
+	
+	// Start GUI if --gui flag is set or no arguments provided
+	if args.GUI || (args.Nzblnk == "" && args.Header == "" && !args.Register) {
+		loadConfig()
+		ui := NewUIApp()
+		ui.Run()
+		return
+	}
+	
 	checkArguments()
 	loadConfig()
 
