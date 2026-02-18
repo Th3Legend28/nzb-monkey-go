@@ -35,6 +35,12 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version-file: 'go.mod' # Use the Go version specified in go.mod
+      
+      - name: Install Fyne dependencies (Linux)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgl1-mesa-dev xorg-dev
+      
       - name: Set Ref Name Variable
         run: |
           if [ "$GITHUB_EVENT_NAME" != "release" ]; then
