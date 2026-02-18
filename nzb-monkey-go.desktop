@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=NZB Monkey Go
+Comment=NZB search and download tool with GUI
+Exec=nzb-monkey-go --gui
+Icon=nzb-monkey-go
+Terminal=false
+Categories=Network;FileTransfer;
+Keywords=nzb;usenet;download;nzblnk;
+StartupNotify=true
